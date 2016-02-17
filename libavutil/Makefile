@@ -18,6 +18,7 @@ HEADERS = adler32.h                                                     \
           cast5.h                                                       \
           camellia.h                                                    \
           channel_layout.h                                              \
+          colorspace.h                                                  \
           common.h                                                      \
           cpu.h                                                         \
           crc.h                                                         \

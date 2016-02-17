@@ -376,6 +376,7 @@ void av_register_all(void)
     REGISTER_PROTOCOL(FFRTMPCRYPT,      ffrtmpcrypt);
     REGISTER_PROTOCOL(FFRTMPHTTP,       ffrtmphttp);
     REGISTER_PROTOCOL(FILE,             file);
+	REGISTER_PROTOCOL(IMEM,             imem);
     REGISTER_PROTOCOL(FTP,              ftp);
     REGISTER_PROTOCOL(GOPHER,           gopher);
     REGISTER_PROTOCOL(HLS,              hls);

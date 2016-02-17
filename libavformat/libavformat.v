@@ -13,5 +13,6 @@ LIBAVFORMAT_$MAJOR {
                 ffurl_write;
                 #those are deprecated, remove on next bump
                 url_feof;
+                imem_set_callbacks;
         local: *;
 };

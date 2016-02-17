@@ -6,6 +6,9 @@ HEADERS = avformat.h                                                    \
           avio.h                                                        \
           version.h                                                     \
 
+HEADERS-$(CONFIG_IMEM_PROTOCOL)          += imem.h                      \
+                                            url.h
+
 OBJS = allformats.o         \
        avio.o               \
        aviobuf.o            \
@@ -523,6 +526,7 @@ OBJS-$(CONFIG_DATA_PROTOCOL)             += data_uri.o
 OBJS-$(CONFIG_FFRTMPCRYPT_PROTOCOL)      += rtmpcrypt.o rtmpdh.o
 OBJS-$(CONFIG_FFRTMPHTTP_PROTOCOL)       += rtmphttp.o
 OBJS-$(CONFIG_FILE_PROTOCOL)             += file.o
+OBJS-$(CONFIG_IMEM_PROTOCOL)             += imem.o
 OBJS-$(CONFIG_FTP_PROTOCOL)              += ftp.o
 OBJS-$(CONFIG_GOPHER_PROTOCOL)           += gopher.o
 OBJS-$(CONFIG_HLS_PROTOCOL)              += hlsproto.o
